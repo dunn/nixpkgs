@@ -13316,6 +13316,8 @@ in
 
   inherit (self.gitAndTools) git gitFull gitSVN git-cola svn2git git-radar transcrypt git-crypt;
 
+  git-credential-gnome-keyring = callPackage ../applications/version-management/git-and-tools/git-credential-gnome-keyring { };
+
   gitMinimal = git.override {
     withManual = false;
     pythonSupport = false;
